@@ -5,6 +5,8 @@ import needle.nn as nn
 import math
 import numpy as np
 np.random.seed(0)
+# For some reason ResNet training test was failing, so here I was comparing my implementation 
+# to another implementation. It is still failing, weird.
 '''
 class ResBlock(nn.Module):
   def __init__(self, a, b, device=None, dtype="float32"):
